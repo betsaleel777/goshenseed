@@ -1,0 +1,17 @@
+.root {
+  display: flex;
+  @include breakpoints-up(sm) {
+    justify-content: center;
+  }
+  @include breakpoints-down(xs) {
+    overflow-x: auto;
+  }
+  img {
+    height: 90px;
+    margin: $spacing4;
+    transition: all 0.3s ease-out;
+    &:hover {
+      filter: contrast(0.5) brightness(1.5);
+    }
+  }
+}
