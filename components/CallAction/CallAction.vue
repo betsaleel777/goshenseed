@@ -21,7 +21,7 @@
               <v-col cols="12" lg="3" md="4" class="ps-sm-8">
                 <div class="d-flex align-center justify-center">
                   <v-btn
-                    :href="link.agency.contact"
+                    :href="link.agency.contactMap"
                     block
                     color="white"
                     class="button"

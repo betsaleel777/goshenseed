@@ -1,7 +1,7 @@
 <template>
   <div class="main-wrap">
     <main-header />
-    <banner>
+    <banner :domaine="domaine">
       <img
         :src="imgAPI.agencyInner[1]"
         :data-2d="imgAPI.agencyInner[0]"
@@ -18,7 +18,7 @@
       <v-container>
         <v-row justify="center">
           <v-col md="6" cols="12" class="px-md-12">
-            <about-video />
+            <about-video :domaine="domaine" />
           </v-col>
           <v-col md="6" sm="8" cols="12" class="px-md-12">
             <about-progress />
@@ -27,7 +27,7 @@
       </v-container>
     </div>
     <div class="space-top-short space-bottom-short">
-      <photo-slider />
+      <photo-slider :domaine="domaine" />
     </div>
     <div class="space-top-short space-bottom-short" id="call-to-action">
       <call-action />
@@ -43,6 +43,7 @@
 </style>
 
 <script>
+import { terrain } from '~/static/text/domaine'
 import brand from '~/static/text/brand'
 import imgAPI from '~/static/images/imgAPI'
 import Header from '~/components/Header'
@@ -69,7 +70,8 @@ export default {
   },
   data() {
     return {
-      imgAPI: imgAPI
+      imgAPI: imgAPI,
+      domaine: terrain
     }
   },
   head() {

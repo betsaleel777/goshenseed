@@ -1,32 +1,3 @@
-const img2d = {
-  main: [
-    '',
-    '/images/agency/banner1_2d@2x.png',
-    '',
-    '/images/agency/banner2_2d@2x.png',
-    '',
-    '/images/agency/banner3_2d@2x.png',
-    '',
-    '/images/agency/services_2d@2x.png',
-    '',
-    '/images/agency/testimonials_2d@2x.png'
-  ],
-  inner: [
-    '',
-    '/images/agency/about_2d@2x.png',
-    '',
-    '/images/agency/login_2d@2x.png',
-    '',
-    '/images/agency/register_2d@2x.png',
-    '',
-    '/images/agency/faq_2d@2x.png',
-    '',
-    '/images/agency/error_2d@2x.png',
-    '',
-    '/images/agency/team_2d@2x.png'
-  ]
-}
-
 const img3d = {
   main: [
     '',

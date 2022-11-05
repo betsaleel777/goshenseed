@@ -176,10 +176,29 @@ export default () => {
         case_title: 'Case studies',
         cta_title: 'prêt à travailler avec nous?',
         cta_subtitle: 'Best Tech team are not instant born, they’re made...',
-        cta_btn: 'contact us',
+        cta_btn: 'contactez nous',
         office_title: 'Our Office',
         office_head: 'Head Quarter',
-        office_branch: 'Branch Office'
+        office_branch: 'Branch Office',
+        agri_name: 'Agricultures',
+        agri_title_banner: 'Petit slogan pour agriculture ou titre',
+        agri_subtitle_banner: 'sous titre pour agriculture',
+        agri_title_video: 'le titre de la section vidéo pour agriculture',
+        agri_subtitle_video: 'le sous titre de la section vidéo',
+        agri_title_gallery: 'titre de la gallerie pour agriculture',
+        agri_subtitle_gallery: 'sous titre de la section gallerie',
+        elev_title_banner: 'Petit slogan pour elevage ou titre',
+        elev_subtitle_banner: 'sous titre pour elevage',
+        elev_title_video: 'le titre de la section vidéo pour élévage',
+        elev_subtitle_video: 'le sous titre de la section élévage',
+        elev_title_gallery: 'titre de la gallerie pour élévage',
+        elev_subtitle_gallery: 'sous titre de la section gallerie pour elevage',
+        terr_title_banner: 'Petit slogan pour terrain ou titre',
+        terr_subtitle_banner: 'sous titre pour terrain',
+        terr_title_video: 'le titre de la section vidéo pour terrain',
+        terr_subtitle_video: 'le sous titre de la section terrain',
+        terr_title_gallery: 'titre de la gallerie pour terrain',
+        terr_subtitle_gallery: 'sous titre de la section gallerie pour terrain'
       }
     })
   })

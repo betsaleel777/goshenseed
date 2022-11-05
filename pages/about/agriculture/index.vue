@@ -1,7 +1,7 @@
 <template>
   <div class="main-wrap">
     <main-header />
-    <banner>
+    <banner :domaine="domaine">
       <img
         :src="imgAPI.agencyInner[1]"
         :data-2d="imgAPI.agencyInner[0]"
@@ -12,22 +12,18 @@
     </banner>
     <company-logo />
     <div class="space-top-short">
-      <counter />
-    </div>
-    <div class="space-top-short">
       <v-container>
         <v-row justify="center">
           <v-col md="6" cols="12" class="px-md-12">
-            <about-video />
+            <about-video :domaine="domaine" />
           </v-col>
           <v-col md="6" sm="8" cols="12" class="px-md-12">
-            <about-progress />
           </v-col>
         </v-row>
       </v-container>
     </div>
     <div class="space-top-short space-bottom-short">
-      <photo-slider />
+      <photo-slider :domaine="domaine" />
     </div>
     <div class="space-top-short space-bottom-short" id="call-to-action">
       <call-action />
@@ -43,14 +39,13 @@
 </style>
 
 <script>
+import { agriculture } from '~/static/text/domaine.js'
 import brand from '~/static/text/brand'
 import imgAPI from '~/static/images/imgAPI'
 import Header from '~/components/Header'
 import Banner from '~/components/About/Banner'
 import CompanyLogo from '~/components/CompanyLogo'
-import Counter from '~/components/Counter'
 import Video from '~/components/About/Video'
-import Progress from '~/components/About/Progress'
 import PhotoSlider from '~/components/About/PhotoSlider'
 import CallAction from '~/components/CallAction'
 import Footer from '~/components/Footer'
@@ -61,20 +56,19 @@ export default {
     'main-footer': Footer,
     Banner,
     CompanyLogo,
-    Counter,
-    'about-progress': Progress,
     'about-video': Video,
     PhotoSlider,
     CallAction
   },
   data() {
     return {
-      imgAPI: imgAPI
+      imgAPI: imgAPI,
+      domaine: agriculture
     }
   },
   head() {
     return {
-      title: 'About | ' + brand.agency.desc
+      title: this.$t(agriculture.name) + ' | ' + brand.agency.desc
     }
   }
 }

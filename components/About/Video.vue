@@ -25,10 +25,10 @@
       </v-card>
     </v-dialog>
     <h4 class="use-text-primary use-text-title2 mb-3">
-      Lorem ipsum dolor sit amet.
+      {{ $t(domaine.titleVideo) }}
     </h4>
     <p class="pb-2 use-text-subtitle2">
-      Proin scelerisque sapien at enim faucibus, ut scelerisque urna consequat. In porttitor congue libero
+      {{ $t(domaine.subtitleVideo) }}
     </p>
     <div class="video-wrap">
       <div v-ripple @click="handleVideoOpen">
@@ -56,6 +56,12 @@ import MediaCard from '../Cards/MediaCard'
 export default {
   components: {
     MediaCard
+  },
+  props: {
+    domaine: {
+      type: Object,
+      required: true
+    }
   },
   data() {
     return {

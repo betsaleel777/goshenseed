@@ -10,9 +10,9 @@
     <v-container>
       <div class="gallery-root">
         <h4 class="use-text-title2 mb-3 use-text-primary">
-          {{ $t('common.about_gallery') }}
+          {{ $t(domaine.subtitleGallery) }}
         </h4>
-        <p class="use-text-subtitle2">Vestibulum faucibus eget erat eget pretium. Donec commodo convallis eget suscipit orci. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+        <p class="use-text-subtitle2">{{ $t(domaine.subtitleGallery) }}</p>
         <div class="carousel" v-if="loaded">
           <v-btn
             icon
@@ -64,6 +64,12 @@ export default {
   components: {
     MediaCard,
     Slick: () => import('vue-slick')
+  },
+  props: {
+    domaine: {
+      type: Object,
+      required: true
+    }
   },
   data() {
     return {

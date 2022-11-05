@@ -67,7 +67,6 @@ import About from '~/components/Home/About'
 import Services from '~/components/Home/Services'
 import Expertise from '~/components/Home/Expertise'
 import Testimonials from '~/components/Home/Testimonials'
-// import CaseStudies from '~/components/Home/CaseStudies'
 import CallAction from '~/components/CallAction'
 import Hidden from '~/components/Hidden'
 import Corner from '~/components/Home/Corner'
@@ -83,7 +82,6 @@ export default {
     Expertise,
     Testimonials,
     CompanyLogo,
-    // CaseStudies,
     CallAction,
     Hidden,
     Corner,
